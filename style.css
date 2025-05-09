@@ -1,0 +1,73 @@
+:root {
+	--hf-bckg: #ccc;
+	--hf-brd-clr: #aaa;
+	--hf-brd-wdth: 15px;
+	--hf-shdw-clr: #555;
+	--hf-shdw-offt: 10px;
+	--hf-shdw-blur: 5px;
+}
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	appearance: none;
+	text-decoration: none;
+	font-family: inherit;
+	color: inherit;
+}
+
+body {
+	width: 100%;
+	height: 200vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: stretch;
+	align-items: stretch;
+	font-family: Arial;
+	color: #fff;
+	overflow-x: hidden;
+}
+
+.vcenter {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#hdr, #ftr {
+	flex: 1;	
+	background-color: var(--hf-bckg);
+	border: 0 
+		solid 
+		var(--hf-brd-clr)
+	;
+}
+
+#hdr {
+	border-bottom-width: var(--hf-brd-wdth);
+	box-shadow: 0 
+		var(--hf-shdw-offt) 
+		var(--hf-shdw-blur)
+		var(--hf-shdw-clr)
+	;
+}
+
+#hdr h1 {
+	margin: 0 10px;
+}
+
+#ftr {
+	border-top-width: var(--hf-brd-wdth);
+	box-shadow: 0 
+		calc(-1 * var(--hf-shdw-offt))
+		var(--hf-shdw-blur)
+		var(--hf-shdw-clr)
+	;
+}
+
+#main {
+	height: 180vh;
+}
