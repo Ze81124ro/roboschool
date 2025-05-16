@@ -1,0 +1,36 @@
+#hdr, #ftr {
+	--bckg-clr: #556;
+	--brd-clr: #445;
+	--brd-wdth: 15px;
+	--shdw-sz: 25px;
+	--shdw-blr: 15px;
+	--shdw-sprd: 20px;
+	--shdw-clr: #889;
+	--inst-shdw-sz: 30px;
+	--inst-shdw-blr: 20px;
+	--inst-shdw-sprd: 25px;
+	--inst-shdw-clr: #446;
+}
+
+body {
+	--hght: 200vh;
+}
+
+#main {
+	--hght: 180vh;
+	--bckg-clr: #ccf;
+}
+
+#main .blk {
+	--mrgn: 50px;
+	--bckg-clr: #889;
+	--brd-clr: #667;
+	--brd-wdth: 15px;
+	--brd-rds: 30px 50px 70px;
+	--shdw-sz: 25px;
+	--shdw-blr: 15px;
+	--shdw-clr: #889;
+	--inst-shdw-sz: 20px;
+	--inst-shdw-blr: 15px;
+	--inst-shdw-clr: #778;
+}
